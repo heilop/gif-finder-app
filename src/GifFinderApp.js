@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
+import { AddCategory } from './components/AddCategory';
 
 const GifFinderApp = () => {
   // const categories = ['Mr. Robot', 'The walking Dead', 'Ted Lasso'];
   const [categories, setCategories] = useState(['Mr. Robot', 'The walking Dead', 'Ted Lasso']);
 
-  const handleAdd = (e) => {
-    // setCategories([...categories, 'House of Cards']);
-    setCategories( categs => [...categs, 'House of Cards']);
-  }
+  // const handleAdd = (e) => {
+  //   // setCategories([...categories, 'House of Cards']);
+  //   setCategories( categs => [...categs, 'House of Cards']);
+  // }
 
   return (
     <>
       <h2>GifFinderApp</h2>
+      <AddCategory />
       <br />
-
-      <button onClick={handleAdd}>Add Category</button>
 
       <ol>
         {
