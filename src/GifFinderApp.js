@@ -13,7 +13,7 @@ const GifFinderApp = () => {
   return (
     <>
       <h2>GifFinderApp</h2>
-      <AddCategory />
+      <AddCategory setCategories = { setCategories } />
       <br />
 
       <ol>
