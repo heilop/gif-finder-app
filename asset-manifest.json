@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gif-finder-app/static/css/main.81ca5b7b.chunk.css",
-    "main.js": "/gif-finder-app/static/js/main.2f1c9e4f.chunk.js",
-    "main.js.map": "/gif-finder-app/static/js/main.2f1c9e4f.chunk.js.map",
+    "main.js": "/gif-finder-app/static/js/main.eea936f6.chunk.js",
+    "main.js.map": "/gif-finder-app/static/js/main.eea936f6.chunk.js.map",
     "runtime-main.js": "/gif-finder-app/static/js/runtime-main.f7e03f16.js",
     "runtime-main.js.map": "/gif-finder-app/static/js/runtime-main.f7e03f16.js.map",
     "static/js/2.a913d2ca.chunk.js": "/gif-finder-app/static/js/2.a913d2ca.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f7e03f16.js",
     "static/js/2.a913d2ca.chunk.js",
     "static/css/main.81ca5b7b.chunk.css",
-    "static/js/main.2f1c9e4f.chunk.js"
+    "static/js/main.eea936f6.chunk.js"
   ]
 }
