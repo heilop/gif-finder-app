@@ -11,9 +11,9 @@ export const GifGrid = ( { category }) => {
   return (
     <>
       <h3>{ category }</h3>
-      { loading && <p>Loading</p> }
+      { loading && <p className="card-grid animate__animated animate__flash">Loading</p> }
 
-      <div className="card-grid">
+      <div className="card-grid animate__animated animate__fadeIn">
 
         {
           images.map(img => (
