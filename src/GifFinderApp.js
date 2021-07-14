@@ -3,13 +3,8 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 const GifFinderApp = () => {
-  // const categories = ['Mr. Robot', 'The walking Dead', 'Ted Lasso'];
-  const [categories, setCategories] = useState(['Mr. Robot']);
 
-  // const handleAdd = (e) => {
-  //   // setCategories([...categories, 'House of Cards']);
-  //   setCategories( categs => [...categs, 'House of Cards']);
-  // }
+  const [categories, setCategories] = useState(['Mr. Robot']);
 
   return (
     <>
