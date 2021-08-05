@@ -29,4 +29,24 @@ describe('Test in <AddCategory />', () => {
     expect(setCategories).not.toHaveBeenCalled();
   })
 
+  test('should call the setCategory and clean text box', () => {
+    const value = 'Hello world!';
+
+    // Simulate set input value.
+    wrapper.find('input').simulate('change', { target: { value } });
+
+    // Simulate submit form.
+    wrapper.find('form').simulate('submit', { preventDefault(){} });
+
+    // Simulate setCategory call.
+    expect(setCategories).toHaveBeenCalled();
+    expect(setCategories).toHaveBeenCalledTimes(1);
+    expect(setCategories).toHaveBeenCalledWith( expect.any(Function) );
+
+
+    // String value should be null.
+    expect(wrapper.find('input').prop('value')).toBe('');
+  })
+
+
 })
