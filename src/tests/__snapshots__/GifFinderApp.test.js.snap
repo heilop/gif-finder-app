@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <GifFinderApp /> should show <GifFinderApp /> correctly 1`] = `
+<Fragment>
+  <h2>
+    GifFinderApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <br />
+  <ol />
+</Fragment>
+`;
