@@ -21,18 +21,28 @@ describe('Test in <GifGrid /> component', () => {
 
   test('should show items when images are loaded useFetchGifs', () => {
 
-    const gifs = [{
-      id: 'ABC',
-      url: 'http://localhost/demo/image.jpg',
-      title: 'Image Title',
-    }]
+    const gifs = [
+      {
+        id: 'ABC',
+        url: 'http://localhost/demo/image.jpg',
+        title: 'Image Title',
+      },
+      {
+        id: 'DEF',
+        url: 'http://localhost/demo2/image.jpg',
+        title: 'Image Title 2',
+      },
+    ]
     useFetchGifs.mockReturnValue({
-      data: [],
-      loading: true
+      data: gifs,
+      loading: false
     })
 
     const wrapper = shallow(<GifGrid category = { category } />);
 
+    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find('p').exists()).toBe(false);
+    expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
   })
 
 });
